@@ -1,9 +1,3 @@
-h1 {
-  color: rgb(255, 251, 0);
-  border: 3px solid #f06d06;
-  border-style: solid;
-  border-color: rgb(184, 67, 0);
-}
 body {
   font-family: system-ui;
   background: #c5101005;
@@ -64,4 +58,15 @@ form {
   width: 100%;
   height: 2px;
   background-color: #fdcf00; /* Color de la línea */
+}
+.title:hover {
+  color: rgb(255, 251, 0);
+  border: 3px solid #f06d06;
+  content: counter(name);
+  position: relative;
+  left: 0%;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: yellowgreen;
 }
