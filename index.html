@@ -11,9 +11,9 @@
     <header>
       <nav>
         <h1>El blog del cafe</h1>
-        <a href="#cafes">cafes</a>
-        <a href="#cafeteras">cafeteras</a>
-        <a href="#sobre nosotros">sobre nosotros</a>
+        <a class="link" href="#cafes">cafes</a>
+        <a class="link" href="#cafeteras">cafeteras</a>
+        <a class="link" href="#sobre nosotros">sobre nosotros</a>
       </nav>
     </header>
     <main>
@@ -210,48 +210,52 @@
         </aside>
       </section>
       <section>
-        <h4>Formulario de contacto</h4>
-        <form method="post" action="/">
-          <fieldset>
-            <legend>Información personal</legend>
-            <div>
-              <label
-                >Nombre:
-                <input type="text" name="name" required />
-              </label>
-            </div>
-            <label
-              >Email:
-              <input type="email" name="email" required />
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Información Adicional</legend>
-            <label
-              >telefono:
-              <input type="tel" name="phone" required />
-            </label>
-          </fieldset>
-          <div>
+        <div class="container">
+          <h4>Formulario de contacto</h4>
+          <form method="post" action="/">
             <fieldset>
-              <legend>otros</legend>
+              <legend>Información personal</legend>
               <div>
-                <label for="why">¿En que podemos ayudarte?</label>
-                <select name="why" id="why">
-                  <option value="1">cafes</option>
-                  <option value="2">cafeteras</option>
-                  <option value="3">asesoramiento</option>
-                </select>
-                <div>
-                  <label for="terms">Aceptas los terminos de privacidad</label>
-                  <input type="checkbox" id="terms" name="terms" required />
-                </div>
+                <label
+                  >Nombre:
+                  <input type="text" name="name" required />
+                </label>
               </div>
+              <label
+                >Email:
+                <input type="email" name="email" required />
+              </label>
             </fieldset>
-          </div>
-          <button type="submit">enviar contacto</button
-          ><!--es la forma correcta de colocar un boton en vez de colocar el imput, mejora la semantica pero solo es dentro de un formulario-->
-        </form>
+            <fieldset>
+              <legend>Información Adicional</legend>
+              <label
+                >telefono:
+                <input type="tel" name="phone" required />
+              </label>
+            </fieldset>
+            <div>
+              <fieldset>
+                <legend>otros</legend>
+                <div>
+                  <label for="why">¿En que podemos ayudarte?</label>
+                  <select name="why" id="why">
+                    <option value="1">cafes</option>
+                    <option value="2">cafeteras</option>
+                    <option value="3">asesoramiento</option>
+                  </select>
+                  <div>
+                    <label for="terms"
+                      >Aceptas los terminos de privacidad</label
+                    >
+                    <input type="checkbox" id="terms" name="terms" required />
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <button type="submit">enviar contacto</button
+            ><!--es la forma correcta de colocar un boton en vez de colocar el imput, mejora la semantica pero solo es dentro de un formulario-->
+          </form>
+        </div>
       </section>
     </main>
     <footer>
